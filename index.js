@@ -5,7 +5,8 @@ const mongoose = require('mongoose')
 const app = express()
 
 // Connect to mongodb
-mongoose.connect('mongodb://localhost:27017/nodejseventdb')
+// mongoose.connect('mongodb://localhost:27017/nodejseventdb')
+mongoose.connect('mongodb://samit:123456@localhost:27017/nodejseventdb')
 mongoose.Promise = global.Promise
 
 app.use(express.json())
